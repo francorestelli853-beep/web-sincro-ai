@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sincro IA | Automatización & Inteligencia Artificial</title>
+    <meta name="description"
+        content="Servicios avanzados de automatización e IA. Optimiza tu negocio con soluciones tecnológicas de vanguardia.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Sincro<span class="text-gradient">IA</span></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Sincro<span class="text-gradient">IA</span></a>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#features" class="nav-link">Tecnología</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <a href="#contacto" class="btn btn-primary">Empezar Ahora</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <canvas id="bg-canvas"></canvas>
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content hidden">
+                <h1 class="hero-title">Automatización Inteligente para el <span class="text-gradient">Futuro</span>
+                </h1>
+                <p class="hero-subtitle">Transformamos empresas con soluciones de IA avanzada, agentes autónomos y
+                    flujos de trabajo eficientes.</p>
+                <div class="hero-buttons">
+                    <a href="#servicios" class="btn btn-primary">Nuestros Servicios</a>
+                    <a href="#contacto" class="btn btn-outline">Agendar Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="section-padding">
+        <div class="container">
+            <h2 class="section-title hidden">Soluciones <span class="text-gradient">Premium</span></h2>
+            <p class="section-subtitle hidden">Potenciamos tu negocio con herramientas de última generación.</p>
+
+            <div class="services-grid">
+                <!-- Card 1: Chatbots -->
+                <div class="service-card glass hidden">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3>Chatbots con IA</h3>
+                    <p>Asistentes virtuales entrenados con tus datos para atención al cliente 24/7 con procesamiento
+                        de
+                        lenguaje natural.</p>
+                    <button class="btn-text toggle-demo" onclick="toggleDemo(this)">Ver Demo <i
+                            class="fa-solid fa-chevron-down"></i></button>
+
+                    <div class="demo-content">
+                        <div class="chat-ui">
+                            <div class="chat-message bot">Hola, ¿en qué puedo ayudarte hoy?</div>
+                            <div class="chat-message user">Quiero optimizar mis ventas.</div>
+                            <div class="chat-message bot">Puedo analizar tu CRM y sugerir estrategias automatizadas.
+                                🚀
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Workflows -->
+                <div class="service-card glass hidden">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3>Automatización de Flujos</h3>
+                    <p>Conectamos tus aplicaciones (CRM, Email, Slack) para eliminar tareas repetitivas y aumentar
+                        la
+                        productividad.</p>
+                    <button class="btn-text toggle-demo" onclick="toggleDemo(this)">Ver Flujo <i
+                            class="fa-solid fa-chevron-down"></i></button>
+
+                    <div class="demo-content">
+                        <div class="workflow-ui">
+                            <div class="flow-node gmail"><i class="fa-solid fa-envelope"></i> Gmail</div>
+                            <div class="flow-line"></div>
+                            <div class="flow-node openai"><i class="fa-solid fa-brain"></i> ChatGPT</div>
+                            <div class="flow-line"></div>
+                            <div class="flow-node slack"><i class="fa-brands fa-slack"></i> Slack</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Predictive Models -->
+                <div class="service-card glass hidden">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Modelos Predictivos</h3>
+                    <p>Análisis de datos avanzado para predecir tendencias de mercado y comportamiento de clientes.
+                    </p>
+                    <button class="btn-text toggle-demo" onclick="toggleDemo(this)">Ver Métricas <i
+                            class="fa-solid fa-chevron-down"></i></button>
+
+                    <div class="demo-content">
+                        <div class="chart-ui">
+                            <div class="bar" style="height: 40%;"></div>
+                            <div class="bar" style="height: 70%;"></div>
+                            <div class="bar" style="height: 50%;"></div>
+                            <div class="bar" style="height: 90%;"></div>
+                            <div class="bar" style="height: 80%;"></div>
+                        </div>
+                        <p style="font-size: 0.8rem; text-align: center; margin-top: 10px; color: var(--accent);">
+                            +150%
+                            ROI Proyectado</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Custom Dev -->
+                <div class="service-card glass hidden">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Desarrollo a Medida</h3>
+                    <p>Soluciones de software complejas integrando APIs de OpenAI, Anthropic y sistemas
+                        propietarios.
+                    </p>
+                    <button class="btn-text toggle-demo" onclick="toggleDemo(this)">Ver Dashboard <i
+                            class="fa-solid fa-chevron-down"></i></button>
+
+                    <div class="demo-content">
+                        <div class="app-mockup-image code-preview">
+                            <div class="code-window-header">
+                                <div class="window-dot red"></div>
+                                <div class="window-dot yellow"></div>
+                                <div class="window-dot green"></div>
+                                <span class="window-title">main.py</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="keyword">import</span> openai</div>
+                                <div class="code-line"><span class="keyword">from</span> sincro_ai <span
+                                        class="keyword">import</span> Agent</div>
+                                <div class="code-line">&nbsp;</div>
+                                <div class="code-line"><span class="comment"># Initialize Autonomous System</span></div>
+                                <div class="code-line">agent = Agent.create({</div>
+                                <div class="code-line">&nbsp;&nbsp;model: <span class="string">"gpt-4-turbo"</span>,
+                                </div>
+                                <div class="code-line">&nbsp;&nbsp;tools: [<span class="function">"search"</span>, <span
+                                        class="function">"email"</span>]</div>
+                                <div class="code-line">})</div>
+                                <div class="code-line">&nbsp;</div>
+                                <div class="code-line"><span class="keyword">await</span> agent.execute_task()</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Solutions Section -->
+    <section id="soluciones-medida" class="section-padding">
+        <div class="container">
+            <div class="custom-solutions-container glass hidden">
+                <div class="custom-content">
+                    <h2 class="section-title" style="text-align: left;">Soluciones <span class="text-gradient">100%
+                            Personalizadas</span></h2>
+                    <p class="section-subtitle" style="text-align: left; margin-bottom: 30px;">
+                        ¿Tienes un problema específico que ninguna herramienta del mercado resuelve?
+                    </p>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">
+                        En <strong>Sincro IA</strong> entendemos que cada negocio es único. No ofrecemos solo
+                        paquetes
+                        enlatados; analizamos tu infraestructura, tus cuellos de botella y diseñamos una solución
+                        quirúrgica para tu problema puntual.
+                    </p>
+                    <ul class="custom-list">
+                        <li><i class="fa-solid fa-check-circle"></i> Integración de sistemas heredados (Legacy) con
+                            IA
+                            moderna.</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Automatización de procesos industriales o
+                            logísticos específicos.</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Consultoría estratégica para implementación de
+                            IA.
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary" style="margin-top: 30px;">Consultar mi Caso</a>
+                </div>
+                <div class="custom-visual">
+                    <div class="visual-circle"></div>
+                    <i class="fa-solid fa-puzzle-piece puzzle-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/541140682555?text=Hola%20Sincro%20IA,%20quisiera%20agendar%20una%20cita." target="_blank"
+        class="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Features / Tech Section -->
+    <section id="features" class="section-padding" style="background: rgba(255,255,255,0.02);">
+        <div class="container">
+            <div class="features-grid">
+                <div class="hidden">
+                    <h2 class="section-title" style="text-align: left;">Programación <span
+                            class="text-gradient">Avanzada</span></h2>
+                    <p style="color: var(--text-muted); margin-bottom: 30px;">
+                        No solo usamos herramientas no-code. Escribimos código robusto, escalable y seguro para
+                        integraciones complejas que requieren precisión técnica.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item hidden">
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <h4>Arquitectura Escalable</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-muted);">Sistemas diseñados para
+                                    crecer
+                                    con tu empresa.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item hidden">
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <h4>Seguridad de Datos</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-muted);">Cumplimiento con estándares
+                                    de
+                                    privacidad y cifrado.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item hidden">
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <h4>Soporte Técnico Especializado</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-muted);">Equipo de ingenieros listos
+                                    para
+                                    resolver incidencias.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass hidden" style="padding: 40px; border-radius: 20px;">
+                    <h3 style="margin-bottom: 20px;">Tech Stack</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">LangChain</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section-padding">
+        <div class="container contact-container hidden">
+            <h2 class="section-title">Hablemos</h2>
+            <p class="section-subtitle">Cuéntanos tu proyecto y descubramos cómo la IA puede ayudarte.</p>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://wa.me/541140682555?text=Hola%20Sincro%20IA,%20quisiera%20solicitar%20una%20demo."
+                    target="_blank" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 40px;">
+                    <i class="fa-brands fa-whatsapp" style="margin-right: 10px;"></i> Solicitar Demo
+                </a>
+            </div>
+
+            <!-- Form removed as per request -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <a href="#" class="logo">Sincro<span class="text-gradient">IA</span></a>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">
+                    © 2026 Sincro IA. Todos los derechos reservados.
+                </p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
